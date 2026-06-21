@@ -1,0 +1,32 @@
+Q
+#include <iostream>
+using namespace std;
+int main() {
+    char arr[5];
+    for(int i=0;i<=4;i++){
+    cin>>arr[i];
+    cout<<arr;
+    }
+    return 0;
+}
+
+Q
+#include <iostream>
+#include<queue>
+using namespace std;
+int main()
+{
+    priority_queue<int> max_pq;
+    max_pq.push(10);
+    max_pq.push(30);
+    max_pq.push(20);
+    max_pq.push(70);
+    max_pq.push(38);
+    max_pq.push(340);
+    
+    while( !max_pq.empty())
+    {
+        cout<< max_pq.top() << " ";
+        max_pq.pop();
+    }
+}
